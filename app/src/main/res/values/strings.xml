@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Basic Music Player</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_item_library_music">Music Library</string>
+    <string name="nav_item_library_podcasts">Podcasts</string>
+    <string name="nav_item_equalizer">EQ</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
