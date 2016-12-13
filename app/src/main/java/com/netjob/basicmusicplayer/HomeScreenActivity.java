@@ -1,9 +1,7 @@
 package com.netjob.basicmusicplayer;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,13 +11,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity
+public class HomeScreenActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -69,17 +67,24 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        Intent intent;
         int id = item.getItemId();
 
         switch (id) {
 
             case R.id.nav_library_music:
+                intent = new Intent(this, MusicLibraryActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.nav_library_podcasts:
+                intent = new Intent(this, PodcastLibraryActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.nav_equalizer:
+                intent = new Intent(this, EQActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.nav_settings:
