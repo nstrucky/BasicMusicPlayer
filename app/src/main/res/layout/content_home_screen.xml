@@ -16,7 +16,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TODO " />
+        android:text="@string/home_screen_activity_description"
+        android:padding="@dimen/description_text_padding"/>
 
 
 </RelativeLayout>

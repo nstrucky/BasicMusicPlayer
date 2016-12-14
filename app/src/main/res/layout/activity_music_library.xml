@@ -10,4 +10,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.netjob.basicmusicplayer.MusicLibraryActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:text="@string/music_library_activity_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/description_text_padding"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview_tracks"/>
+    </LinearLayout>
+
 </RelativeLayout>

@@ -18,12 +18,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PodcastLibraryActivity"
-                  android:label="@string/label_podcast_library_activity"/>
-        <activity android:name=".MusicLibraryActivity"
-                  android:label="@string/label_music_library_activity"/>
-        <activity android:name=".EQActivity"
-                  android:label="@string/label_eq_activity"></activity>
+        <activity
+            android:name=".PodcastLibraryActivity"
+            android:label="@string/label_podcast_library_activity"
+            android:parentActivityName=".HomeScreenActivity"/>
+        <activity
+            android:name=".MusicLibraryActivity"
+            android:label="@string/label_music_library_activity"
+            android:parentActivityName=".HomeScreenActivity"/>
+        <activity
+            android:name=".EQActivity"
+            android:label="@string/label_eq_activity"
+            android:parentActivityName=".HomeScreenActivity"/>
+        <activity android:name=".NowPlayingActivity"
+                  android:label="@string/label_now_playing_activity"
+                  android:parentActivityName=".HomeScreenActivity"></activity>
     </application>
 
 </manifest>

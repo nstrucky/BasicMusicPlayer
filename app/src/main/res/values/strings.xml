@@ -7,10 +7,52 @@
     <string name="nav_item_library_podcasts">Podcasts</string>
     <string name="nav_item_equalizer">EQ</string>
     <string name="action_settings">Settings</string>
-    
+
     <string name="label_eq_activity">Equalizer</string>
     <string name="label_music_library_activity">Music Library</string>
     <string name="label_podcast_library_activity">Podcasts</string>
-    
+    <string name="label_now_playing_activity">Now Playing</string>
+
+    <string name="equalizer_activity_description">
+        This activity will contain GUI components to interact with an object
+        of the Equalizer class in android.media.audiofx.
+
+    </string>
+
+    <string name="music_library_activity_description">
+        This activity will first show the tab including all tracks in alphabetical
+        order.  When each track is clicked, the user is taken to the now playing
+        activity to see the track album artwork, progress bar, play/pause buttons, etc.
+        other tabs will be added in future to categorize tracks by artist, album, and genre.
+        In order to play the files locally from the system, a MediaPlayer object must be
+        instantiated (android.media.MediaPlayer)
+    </string>
+
+    <string name="podcast_library_activity_description">
+        This activity will first show the tab including all tracks in alphabetical
+        order.  When each track is clicked, the user is taken to the now playing
+        activity to see the track album artwork, progress bar, play/pause buttons, etc.
+        other tabs will be added in future to categorize tracks by podcast and genre.
+        In order to play the files locally from the system, a MediaPlayer object must be
+        instantiated (android.media.MediaPlayer)
+    </string>
+
+    <string name="home_screen_activity_description">
+        This activity is the first place the user lands.  There will not be anything on this
+        screen except for a GUI that looks like radio dials (goofy design, but fun).  It will not
+        actually be a functioning radio, rather the gimmick is that it will have the nostalgic
+        feel of a radio while really just being a player for the library/podcasts all on shuffle.
+        There will be a \"tune\" dial which just switches between genres, a volume slider, am/fm
+        switch to change between music and podcasts.
+    </string>
+
+    <string name="now_playing_activity_description">
+        This activity would be an imageview of the album cover artwork for a given song or podcast.
+        Additionally the GUI would include play, fastforward, rewind buttons and a status/seekbar
+        to traverse the media as it plays. The user should be able to swipe the image in order
+        to skip to the next song or go back to the last one.
+
+
+    </string>
 
 </resources>
