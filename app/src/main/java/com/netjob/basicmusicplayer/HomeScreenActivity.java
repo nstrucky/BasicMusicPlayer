@@ -90,12 +90,6 @@ public class HomeScreenActivity extends AppCompatActivity
             case R.id.nav_settings:
                 break;
 
-            case R.id.nav_share:
-                break;
-
-            case R.id.nav_send:
-                break;
-
         }
 
 
